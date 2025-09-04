@@ -1,0 +1,81 @@
+@use "../util/colors" as *;
+@use "../util/fonts" as *;
+@use "../util/font-family" as *;
+
+.user-profile {
+    padding: 80px 0 140px 0;
+
+    .user-account-info {
+
+
+        .user-profile-info {
+            padding: 16px 0 16px 35px;
+
+            .profile-info {
+                display: block;
+                color: $dark_color;
+                opacity: .5;
+                padding-bottom: 8px;
+                color: $dark_color;
+
+            }
+
+            .active-links {
+                color: $light_red_color;
+                opacity: 10;
+            }
+        }
+    }
+
+
+    .user-edit-profile {
+        box-shadow: 0px 1px 13px 0px #0000000D;
+        background: $light_color;
+        border-radius: 4px;
+        padding: 40px 80px;
+
+        .edit-title {
+            color: $light_red_color;
+            font-size: $text_md;
+            margin-bottom: 16px;
+        }
+
+        .form-label-input {
+            margin-bottom: 24px;
+        }
+
+        .form-label-input-password {
+            margin-bottom: 16px;
+
+            .bill-form-input::placeholder {
+
+                font-size: 16px;
+                font-weight: 400;
+                opacity: .5;
+                font-family: $body_font_family;
+            }
+        }
+
+        .save-btn {
+            gap: 32px;
+        }
+    }
+}
+
+
+
+
+@media (max-width:576px) {
+    .user-profile {
+        .user-edit-profile {
+            padding: 40px;
+            margin-top: 20px;
+        }
+
+        .Product-btn {
+            padding: 16px 20px;
+        }
+
+    }
+
+}

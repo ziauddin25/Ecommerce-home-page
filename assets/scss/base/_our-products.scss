@@ -1,0 +1,109 @@
+@use "../util/colors" as *;
+@use "../util/fonts" as *;
+
+.our-products {
+    padding: 70px 0;
+}
+
+
+
+.products-item {
+    margin-top: 60px;
+}
+
+
+.new-btn {
+    background: $info_color;
+    color: $light_color;
+}
+
+
+
+
+.radio-select {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.slick-prev {
+    position: absolute;
+    left: 91%;
+    top: -85px;
+    width: 46px;
+    height: 46px;
+    border-radius: 30px;
+    background: #F5F5F5;
+    font-size: 16px;
+}
+
+
+.slick-next {
+    font-size: 16px;
+    position: absolute;
+    right: 1%;
+    top: -85px;
+    width: 46px;
+    height: 46px;
+    border-radius: 30px;
+    background: #F5F5F5;
+}
+
+.slick-prev:hover {
+    background: $light_red_color;
+    color: $light_color;
+    transition: all .2s;
+}
+
+.slick-next:hover {
+    background: $light_red_color;
+    color: $light_color;
+    transition: all .2s;
+}
+
+
+.product-related {
+    padding: 0 0 140px 0;
+}
+
+@media (max-width:1400px) {
+    .slick-prev {
+        left: 90%;
+    }
+}
+
+@media (max-width:1200px) {
+    .slick-prev {
+        left: 88%;
+    }
+
+
+    .slick-next {
+        right: 1%;
+    }
+}
+
+
+@media (max-width:992px) {
+    .slick-prev {
+        left: 83%;
+    }
+
+
+    .slick-next {
+        right: 2%;
+    }
+}
+
+
+@media (max-width:768px) {
+    .slick-prev {
+        left: 78%;
+    }
+
+
+    .slick-next {
+        right: 2%;
+    }
+}

@@ -1,0 +1,171 @@
+@use "../util/colors" as *;
+@use "../util/fonts" as *;
+
+.product-billing-details {
+    padding: 80px 0 140px 0;
+
+    .product-billing-form {
+
+        .title {
+            margin-bottom: 48px;
+            font-weight: 500;
+        }
+
+        .billing-form {
+            .bill-form-label {
+                font-size: $font_size_lg_small ;
+                color: gray;
+                margin-bottom: 8px;
+
+                span {
+                    color: $light_red_color;
+                    opacity: .4;
+                    font-size: $font_size_lg_small;
+                }
+            }
+
+            .bill-form-input {
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+            }
+
+            .form-check-input:focus {
+                border-color: gray;
+                box-shadow: none;
+            }
+
+            .form-check-input:checked {
+                background-color: $light_red_color;
+                border-color: $light_red_color;
+            }
+
+            .form-label-input {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+// .breadcrumb li {
+//     font-size: $font_size_md_smal;
+// }
+
+.billing-form {
+    .bill-form-label {
+        font-size: $font_size_lg_small ;
+        color: gray;
+        margin-bottom: 8px;
+
+        span {
+            color: $light_red_color;
+            opacity: .4;
+            font-size: $font_size_lg_small;
+        }
+    }
+
+    .bill-form-input {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .form-check-input:focus {
+        border-color: gray;
+        box-shadow: none;
+    }
+
+    .form-check-input:checked {
+        background-color: $light_red_color;
+        border-color: $light_red_color;
+    }
+
+    .form-label-input {
+        margin-bottom: 32px;
+    }
+}
+
+
+
+
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    background: #F5F5F5;
+    border-color: #dc3545;
+    padding-right: calc(1.5em + .75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem)
+}
+
+.form-control {
+    background: #F5F5F5;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 2px gray;
+    border-color: gray;
+}
+
+
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 .12rem $light_red_color;
+}
+
+
+.product-bill-payment {
+    .product-price {
+        margin-bottom: 32px;
+
+        .cart-img {
+            width: 54px;
+            height: 54px;
+
+            img {
+                object-fit: cover;
+
+            }
+
+        }
+    }
+
+    .cart-total-cost {
+        padding: 0;
+        border: none;
+    }
+
+
+    .payment-methods {
+        padding: 16px 0 32px 0;
+
+        .payment-method-bank {
+            margin-bottom: 32px;
+
+            .bank-details {
+                .img {
+                    width: 42px;
+                    // height: 18px;
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .order-btn {
+        .Product-btn {
+            display: inline-block;
+            margin-top: 32px;
+        }
+    }
+
+
+}

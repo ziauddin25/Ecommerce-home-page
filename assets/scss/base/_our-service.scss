@@ -1,0 +1,79 @@
+@use "../util/colors" as *;
+@use "../util/fonts" as *;
+
+
+.our-service {
+    padding: 140px 0;
+}
+
+
+.service-content {
+    max-width: 950px;
+    margin: auto;
+}
+
+
+
+.service-item {
+    text-align: center;
+}
+
+.srvice-icon {
+
+    width: 60px;
+    height: 60px;
+    background: rgba(47, 46, 48, .5);
+
+    .icon-dark {
+        width: 40px;
+        height: 40px;
+        background: #000;
+        color: #F5F5F5;
+    }
+
+}
+
+
+
+.service-text {
+    margin-top: 24px;
+
+    .service-title {
+        font-size: 20px;
+    }
+
+    .service-sub-title {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+}
+
+
+.btn-up {
+    z-index: 200;
+    bottom: 30px;
+    right: 10%;
+    width: 46px;
+    height: 46px;
+    background: #F5F5F5;
+
+    &:hover {
+        background: $light_red_color;
+        color: $light_color;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:992px) {
+    .service-content {
+        max-width: 720px;
+    }
+}

@@ -1,0 +1,60 @@
+@use "../util/colors" as *;
+@use "../util/fonts" as *;
+
+
+
+.summer-sale {
+    background-color: $dark_color;
+    background: #000;
+    padding: 12px 0;
+}
+
+.sm-title {
+    font-size: $font_size_lg_small;
+    color: $light_color;
+
+}
+
+.sm-link {
+    color: $light_color;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+.sm-link:hover {
+    color: $light_red_color;
+}
+
+.dp-btn {
+    color: $light_color;
+    font-size: $font_size_md_small;
+    background: none;
+    border: none;
+}
+
+
+.language-dropdown-menu {
+    inset: 0px auto auto -91px !important;
+}
+
+
+
+@media (max-width:576px) {
+    .language-dropdown-menu {
+        inset: 0px auto auto -105px !important;
+    }
+}
+
+@media (max-width:768px) and (min-width:576px) {
+    .language-dropdown-menu {
+        inset: 0px auto auto -112px !important;
+    }
+}
+
+
+@media (max-width:992px) and (min-width:768px) {
+    .language-dropdown-menu {
+        inset: 0px auto auto -95px !important;
+    }
+}

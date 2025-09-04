@@ -1,0 +1,39 @@
+@use "../util/colors" as *;
+@use "../util/fonts" as *;
+
+.best-sells-products {
+    padding: 70px 0;
+}
+
+
+.best-products {
+    margin-top: 60px;
+
+    .product-card {
+        width: auto !important;
+    }
+}
+
+// .sales-img-card {
+
+
+//     .best-img {
+//         position: absolute;
+//         z-index: 0;
+//         top: 20px;
+//         right: 20%;
+//         width: 170px;
+//         height: 180px;
+//     }
+// }
+
+@media (max-width:576px) {
+    .sales-img-card {
+        margin-top: 20px;
+
+        // .best-img {
+        //     top: 20px;
+        //     right: 35%;
+        // }
+    }
+}

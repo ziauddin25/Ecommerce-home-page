@@ -1,0 +1,175 @@
+@use "../util/colors" as *;
+@use "../util/fonts" as *;
+
+.dp-mg {
+    margin-top: 40px;
+}
+
+.hero-link {
+
+    li {
+        margin-top: 16px;
+    }
+
+    a:hover {
+        color: $light_red_color;
+    }
+}
+
+.nav-link:hover {
+    color: black;
+    opacity: .5;
+    text-decoration: underline;
+}
+
+.icon:hover {
+    color: $light_red_color;
+}
+
+.carousel-bg-thumb {
+    height: 344px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-img2 {
+    background-image: url(/assets/images/carousel-img-2.png);
+}
+
+.carousel-img3 {
+    background-image: url(/assets/images/carousel-img-3.png);
+}
+
+.carousel-img4 {
+    background-image: url(/assets/images/carousel-img-4.png);
+}
+
+.carousel-img5 {
+    background-image: url(/assets/images/carousel-img-5.png);
+}
+
+.carousel-title {
+    font-size: $font_h2;
+}
+
+.carousel-sub-title {
+    font-size: $font_size_lg_small;
+    margin-top: 16px;
+}
+
+.carousel-btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: $dark_color;
+    color: $light_color;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.carousel-btn:hover {
+    color: $light_color;
+    background: #000;
+}
+
+
+.apple-icon {
+    font-size: 40px;
+}
+
+.border-dp {
+    border-right: 1px solid #dee2e6;
+}
+
+.dropbtn {
+    border: none;
+    background: $light_color;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 4px;
+    width: 500px;
+    top: 0;
+    left: 100%;
+    background-color: #f1f1f1;
+    z-index: 10;
+    transition: ease-in 5s;
+
+    a:hover {
+        color: $light_red_color;
+    }
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: $light_red_color;
+}
+
+.drop-men {
+    top: -40px;
+}
+
+
+
+
+
+
+.carousel-indicators button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+
+
+
+
+@media (max-width:992px) {
+
+    .border-dp {
+        border-right: 0px solid $dark_color;
+    }
+
+    .dropdown-content {
+        width: auto;
+        top: 80px;
+        left: 0%;
+    }
+
+    .drop-men {
+        top: 50px;
+    }
+
+    .hero-link {
+        padding: 0 10px 10px 16px;
+
+        li {
+            margin-top: 16px;
+        }
+    }
+}
+
+
+
+@media (max-width:576px) {
+    .desktop-device {
+        display: none;
+
+    }
+}

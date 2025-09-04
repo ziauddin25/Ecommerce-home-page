@@ -1,0 +1,139 @@
+@use "../util/colors" as *;
+@use "../util/fonts" as *;
+
+
+.footer {
+    padding: 60px 0 24px 0;
+    background: $dark_color;
+}
+
+.logo {
+    height: 24px;
+    max-width: 100px;
+}
+
+
+.email-input {
+    border: 1.5px solid $light_color;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 16px;
+    max-width: 217px;
+
+    .input {
+        border: none;
+        background: $dark_color;
+        outline: none;
+        color: #FAFAFA;
+    }
+
+
+}
+
+
+.footer-link {
+    color: $light_color;
+
+    ul {
+        li {
+            margin-top: 16px;
+
+            a {
+                color: $light_color;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.ft-title {
+    color: $light_color;
+    font-size: $text_md;
+}
+
+.download-app {
+    color: #FAFAFA;
+
+
+    .download-sub-title {
+        color: #FAFAFA;
+        font-size: $text_small;
+    }
+
+    .download-system {
+        margin-top: 8px;
+
+        .qr-code {
+            width: 80px;
+            height: 80px;
+        }
+
+        .download-link {
+            .app {
+                width: 110px;
+                height: 40px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+
+    .social-icon {
+        a {
+            color: $light_color;
+        }
+
+        .fb:hover {
+            color: #1877F2;
+        }
+
+        .twiter:hover {
+            color: #1DA1F2;
+        }
+
+        .linkdin:hover {
+            color: #0A66C2;
+        }
+
+        .insta:hover {
+            color: #d62976;
+
+        }
+    }
+
+}
+
+
+
+.copyright {
+    border-top: 1px solid gray;
+    opacity: .5;
+    margin-top: 60px;
+    color: gray;
+}
+
+.copyright-text {
+    margin-top: 16px;
+    text-align: center;
+}
+
+
+
+
+@media(max-width:576px) {
+    .download-app {
+        margin-top: 15px;
+    }
+
+    .footer-links {
+        margin-top: 15px;
+    }
+}

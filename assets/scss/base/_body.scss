@@ -1,0 +1,26 @@
+.main-content {
+    overflow: hidden;
+}
+
+
+
+
+.navbar {
+    padding: 0;
+    margin: 0;
+}
+
+
+.dropdown-menu[data-bs-popper] {
+    left: -127px;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn {
+    padding: 0;
+}
